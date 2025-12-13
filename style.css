@@ -1,24 +1,88 @@
+/* Google-style system fonts */
 body {
-  font-family: Arial, sans-serif;
-  background: #f4f6f8;
-  margin: 0;
-  padding: 20px;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+                 Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    background-color: #f4f6f9;
+    color: #1f2933;
 }
 
-header {
-  background: #0a66c2;
-  color: white;
-  padding: 20px;
-  border-radius: 10px;
+/* Header */
+.header {
+    background-color: #0a2540;
+    color: #ffffff;
+    padding: 40px 20px;
+    text-align: center;
 }
 
-section {
-  background: white;
-  padding: 20px;
-  margin-top: 20px;
-  border-radius: 10px;
+.header h1 {
+    margin: 0;
+    font-size: 2.5rem;
 }
 
-h2 {
-  color: #0a66c2;
+.header p {
+    margin-top: 8px;
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* Layout */
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 30px 20px;
+}
+
+/* Cards */
+.card {
+    background: #ffffff;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+.card h2 {
+    margin-top: 0;
+    color: #0a2540;
+}
+
+/* Skills */
+.skills {
+    list-style: none;
+    padding-left: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.skills li {
+    background: #e8f0fe;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 0.95rem;
+}
+
+/* Projects */
+.project {
+    margin-bottom: 20px;
+}
+
+.project h3 {
+    margin-bottom: 5px;
+    color: #102a43;
+}
+
+.project span {
+    font-size: 0.85rem;
+    color: #627d98;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 15px;
+    background: #0a2540;
+    color: #ffffff;
+    font-size: 0.85rem;
 }
